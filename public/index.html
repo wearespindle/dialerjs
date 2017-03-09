@@ -1,0 +1,41 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href='styles.css'>
+</head>
+<body>
+<a href="https://127.0.0.1/:7444/httpstatus" target="blank">Asterisk https status</a>
+<div class="dialer unregistered">
+    <video class="remote-video"></video>
+    <video class="local-video" muted="muted"></video>
+    <div class="status">Not connected</div>
+    <div class="login-input">
+        <input class="username" type="text" value=1000></input>
+        <input class="pw" type="text" value=12345></input>
+        <button class="connect">Connect</button>
+    </div>
+
+    <div class="dial-input no-call">
+        <input class="number" type="text" placeholder="Number to dial, e.g. 2000"></input>
+        <button class="call">Call</button>
+        <button class="end-call">End Call</button>
+
+        <div class="dialpad-container">
+            <div class="dialpad">
+                <button id="1" class="keys">1</button>
+                <button id="2" class="keys">2</button>
+                <button id="3" class="keys">3</button>
+                <button id="4" class="keys">4</button>
+                <button id="5" class="keys">5</button>
+                <button id="6" class="keys">6</button>
+                <button id="7" class="keys">7</button>
+                <button id="8" class="keys">8</button>
+                <button id="9" class="keys">9</button>
+                <button id="0" class="keys">0</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="index.js"></script>
+</html>

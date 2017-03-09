@@ -1,0 +1,39 @@
+{
+  "name": "voipjs",
+  "version": "1.0.0",
+  "description": "VoIP everywhere! A simple jssip voip client, including Asterisk configuration files. Also supports OpenBTS.",
+  "main": "js/index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss static/styles/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build-js": "browserify src/index.js > build/index.js",
+    "watch-js": "watchify src/index.js -o build/index.js",
+    "serve": "static-server ./build"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^14.1.0",
+    "connect": "^3.6.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-help": "^1.6.1",
+    "gulp-if-else": "^1.0.3",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^2.0.1",
+    "keypair": "^1.0.1",
+    "node-sass": "^4.5.0",
+    "pem": "^1.9.4",
+    "serve-static": "^1.12.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0",
+    "yargs": "^7.0.1"
+  }
+}
